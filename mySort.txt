@@ -1,0 +1,8 @@
+Cocktail Shaker Sorting Algorithm:
+It is an improvement of the bubble sorting algorithm. The algorithm separate data in left(sorted) middle(unsorted) and right(sorted) parts. Adopt two-way swapping operation, and recording sorted index to improve the sorting efficiency. The left to right direction helps to record the right part sort index, then avoid unnecessasry computation, and vice versa.
+
+Time complexity: 
+It goes n rounds in worst case if only one element is sorted in each round. 	Each round will takes n operation(compare and swap). So the time complex is n(round)*n(operation) = O(n^2)
+
+Space complexity:
+It doesn't need extra space to store whole data, so the space complexity should be O(1)
